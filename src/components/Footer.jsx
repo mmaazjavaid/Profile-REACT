@@ -7,9 +7,9 @@ function Footer({email,links}) {
         <div className='email--area'>{email}</div>
         <div className='icons--area'>
            
-           {links!==undefined && links.map(() => {
+           {links!==undefined && links.map((link,index) => {
               return(
-              <div className='icon--social'>
+              <div key={index} className='icon--social'>
                  <AiOutlinePhone />
               </div>
               )

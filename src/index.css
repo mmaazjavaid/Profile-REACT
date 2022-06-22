@@ -15,6 +15,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 .profile--container{
   display: flex;
   position: relative;

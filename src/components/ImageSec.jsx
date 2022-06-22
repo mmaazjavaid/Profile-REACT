@@ -5,8 +5,7 @@ import { storage } from '../firebase--config'
 function ImageSec({profileUrl}) {
     const [imgurl,setimgurl]=useState("");
     const getimg = async () => {
-        if (storage) {
-
+        if (profileUrl && storage) {
             await getDownloadURL(ref(storage, profileUrl)).then((x) => {
                 setimgurl(x)
             })
@@ -17,7 +16,7 @@ function ImageSec({profileUrl}) {
     useEffect(() => {
         getimg();
 
-    }, [])
+    }, [profileUrl])
     return (
         <>
             <div className='cover'>
