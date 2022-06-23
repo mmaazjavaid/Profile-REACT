@@ -8,7 +8,7 @@ function App() {
   
   useEffect(() => {
     const fetchdata = async () => {
-      const que = query(ref(db, "Users"), orderByChild("id"), equalTo("piyFzuFxgyUtM9j7njOiOIiB1Yi2"));
+      const que = query(ref(db, "Users"), orderByChild("id"), equalTo("LCrazI2s2EaCwf1k2ObBK4OlaZu2"));
       await get(que)
         .then((snapshot) => {
           var records = {}

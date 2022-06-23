@@ -6,7 +6,7 @@ function NameSec({firstName,lastName,bio}) {
         <div className='firstname'>{firstName}</div>
         <div className='name--sec--2'>
             <div className='lastname'>{lastName}</div>
-            <div className='job'>{"REAL ESTATE AGENT"}</div>
+            <div className='job'>{bio}</div>
         </div>
     </div>
   )
